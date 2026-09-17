@@ -1,0 +1,32 @@
+{
+  "policy": {
+    "openAtGrandExpeditions": 4,
+    "openAtTier": "A+"
+  },
+  "islands": {
+    "moor":               { "tier": "S+", "reward": { "ru": "Рунные камни: ремнант на 8–10 рун", "en": "Runestones: an 8–10 rune remnant" } },
+    "frigid-bluffs":      { "tier": "A+", "reward": { "ru": "Старая экспедиция", "en": "Old Expedition" } },
+    "stagnant-basin":     { "tier": "A",  "reward": { "ru": "Нефть: большие взрывы", "en": "Oil: big explosions" } },
+    "craggy-peninsula":   { "tier": "A",  "reward": { "ru": "Редкость / Rogue Exiles", "en": "Rarity / Rogue Exiles" } },
+    "scorched-cay":       { "tier": "A",  "reward": { "ru": "Повышенная редкость", "en": "Increased rarity" } },
+    "exhumed-ruins":      { "tier": "B",  "reward": "Precursor Leylines" },
+    "barren-atoll":       { "tier": "B+", "reward": { "ru": "Золото", "en": "Gold" },
+                            "note": { "ru": "Источники расходятся: золото или стронгбоксы. Проверить в игре", "en": "Sources disagree: gold or strongboxes. Check in game" } },
+    "lush-isle":          { "tier": "B",  "reward": { "ru": "Опыт / Beyond / Hoards", "en": "Experience / Beyond / Hoards" } },
+    "bleached-shoals":    { "tier": "D",  "reward": { "ru": "Стронгбоксы", "en": "Strongboxes" } },
+    "grazed-prairie":     { "tier": "D",  "reward": { "ru": "Духи Азмери", "en": "Azmeri spirits" } },
+    "sloughed-gully":     { "tier": "D",  "reward": "Monster effectiveness" },
+
+    "fractured-lake":     { "tier": "A",  "reward": { "ru": "Базы колец, зеркальные рары", "en": "Ring bases, mirrored rares" } },
+    "castaway":           { "tier": "A",  "reward": { "ru": "Золото: весь дроп превращается в золото", "en": "Gold: all drops are converted to gold" } },
+    "untainted-paradise": { "tier": "C",  "reward": { "ru": "Опыт, предметы не падают", "en": "Experience, no item drops" } },
+    "moment-of-zen":      { "tier": "C",  "reward": { "ru": "Странствующий торговец", "en": "Travelling merchant" } },
+
+    "jade-isles":         { "tier": "S+", "reward": { "ru": "Босс Manoki, может дать Rakiata's Flow", "en": "Boss Manoki, can drop Rakiata's Flow" } },
+    "obscure-island":     { "tier": "A",  "reward": { "ru": "Босс Olroth", "en": "Boss Olroth" } },
+    "secluded-temple":    { "tier": "A",  "reward": { "ru": "Босс Uhtred", "en": "Boss Uhtred" },
+                            "note": { "ru": "Может дать Depleted Mana Rune для Runeseeker's Call", "en": "Can drop the Depleted Mana Rune for Runeseeker's Call" } },
+    "mournful-cliffside": { "tier": "B",  "reward": { "ru": "Босс Vorana", "en": "Boss Vorana" } },
+    "sprawling-jungle":   { "tier": "B",  "reward": { "ru": "Босс Medved", "en": "Boss Medved" } }
+  }
+}

@@ -1,0 +1,15 @@
+[Bb]in/
+[Oo]bj/
+TestResults/
+
+dist/
+
+.vs/
+.idea/
+.vscode/
+*.user
+
+.claude/
+CLAUDE.md
+CLAUDE.local.md
+.mcp.json

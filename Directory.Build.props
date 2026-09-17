@@ -1,0 +1,15 @@
+<Project>
+
+  <PropertyGroup>
+    <Version>26.9.17</Version>
+    <InformationalVersion>26.09.17</InformationalVersion>
+    <Product>PoE2 Rumours</Product>
+    <Description>Island rumour scanner overlay for Path of Exile 2 Expedition</Description>
+    <Authors>romabeorn</Authors>
+    <Copyright>Copyright © 2026 romabeorn</Copyright>
+    <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+    <Deterministic>true</Deterministic>
+    <PathMap>$(MSBuildThisFileDirectory)=/_/</PathMap>
+  </PropertyGroup>
+
+</Project>

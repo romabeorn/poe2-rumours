@@ -1,0 +1,32 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: windows-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: 9.0.x
+      - run: dotnet test --configuration Release
+      - run: >
+          dotnet publish src/Rumours.App -c Release -r win-x64 --self-contained true
+          -p:PublishSingleFile=true -p:IncludeNativeLibrariesForSelfExtract=true
+          -p:EnableCompressionInSingleFile=true -p:DebugType=none -o out
+      - name: Publish the release
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          $hash = (Get-FileHash out/Poe2Rumours.exe -Algorithm SHA256).Hash.ToLower()
+          "$hash  Poe2Rumours.exe" | Out-File out/Poe2Rumours.exe.sha256 -Encoding ascii
+          "SHA-256 of ``Poe2Rumours.exe``: ``$hash``" | Out-File notes.md -Encoding utf8
+          gh release create $env:GITHUB_REF_NAME out/Poe2Rumours.exe out/Poe2Rumours.exe.sha256 --title "PoE2 Rumours $($env:GITHUB_REF_NAME.TrimStart('v'))" --notes-file notes.md --verify-tag
